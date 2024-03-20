@@ -1,4 +1,4 @@
-pub type Decorate =
+type Decorate =
   fn(String) -> String
 
 pub fn say_hello_with(
