@@ -1,10 +1,10 @@
 import gleam/io
 import gleam/result
 import say_hello.{say_hello_with}
+import decorate.{default_decorate}
 
 pub fn main() {
-  let decorate = fn(value: String) { "---> " <> value <> " <---" }
-  let say_hello = say_hello_with(decorate)
+  let say_hello = say_hello_with(default_decorate)
 
   "Fabien"
   |> say_hello
